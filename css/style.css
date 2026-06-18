@@ -1,0 +1,50 @@
+header {
+    /* border: 2px dashed black; */
+    height: 96px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.header-container {
+    /* border: 1px dashed hotpink; */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 64px;
+}
+
+li a {
+    color: #000;
+    font-family: "TBC Contractica";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.active {
+    color: #00a3e0;
+    font-weight: 700;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+@media (max-width: 900px) {
+    nav {
+        display: none;
+    }
+    .menu {
+        display: inline-block;
+    }
+}
